@@ -2,11 +2,14 @@
 
 # This defines a service for the Django app
 django:
+   image: django:onbuild
 
 
 # This defines a service for the Postgres database
 postgres:
+  image: postgres:latest
 
 
 # This defines a service for the Memcached server
 memcached:
+  image: atbaker/memcached-verbose
